@@ -10,7 +10,7 @@ deltax = (b - a) / numberofsteps
 x = a # <- for the left, for the middle: + deltax / 2, for the right: + deltax
 accumulation = 0
 
-for x in range(0, numberofsteps):
+for n in range(0, numberofsteps):
   deltaS = fnf(x) * deltax  
   accumulation += deltaS  
   x += deltax  
