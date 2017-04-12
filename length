@@ -1,0 +1,17 @@
+import math
+
+def fnf(i):  
+  return math.sqrt(1 + (#derivative of the function) ** 2 )  
+ 
+a = #start
+b = #end
+numberofsteps = #number of steps
+deltax = (b - a) / numberofsteps
+x = a # <- for the left, for the middle: + deltax / 2, for the right: + deltax
+accumulation = 0
+
+for n in range(0, numberofsteps):
+  deltaS = fnf(x) * deltax  
+  accumulation += deltaS  
+  x += deltax  
+  print(deltaS, accumulation)
